@@ -1,0 +1,12 @@
+body{
+    outline: 2px solid red;
+    background-color:ivory;
+}
+header{
+    outline: 2px solid blue;
+    margin: 20px 0px;
+}
+section{
+    outline: 2px solid blue;
+    margin: 20x 0px;  
+}

@@ -1,0 +1,94 @@
+.banner{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width:100vw;
+    overflow : hidden;
+    position : relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20vh;
+    text-align: center;
+}
+.content h1 {
+    font-size: 48px;
+    color: rgb(195, 197, 199);
+}
+.content p {
+    font-size: 24px;
+    color: rgb(170, 173, 175);
+}    
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+nav {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+    font-family: 'Roboto';
+}
+
+nav a {
+    color: rgb(116, 181, 255);
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 18px;
+ }
+
+  nav a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+
+}
+.places-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    padding: 40px 20px;
+    border-radius: 10px;
+    background-color: #ffe4ba;
+}
+.section-container h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    color:darkolivegreen;
+    font-style: underline;    
+} 
+
+.nav .logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}

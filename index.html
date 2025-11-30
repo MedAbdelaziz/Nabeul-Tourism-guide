@@ -3,24 +3,111 @@
 <head>
     
     <title>Nabeul</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="styles/home.css">
+    <link rel = "stylesheet" href="styles/image.css">
+    <link rel="stylesheet" href="styles/outline.css">
+
 </head>
 <body>
     <header>
+        <nav class="nav">
+            <div class="logo-container">
+                <img src="images/icons-and-logos/logo2.png" class="logo">
+                
+            </div>
+            
+            <a href="#places-to-visit">Places to visit</a></li>
+            <a href="#accommodation">Accomodation & Restaurants</a></li>
+            <a href="#reservation">Reservation</a></li>
+        </nav>
         <div class="banner">
-            <img src="images/nabeul_banner.jpg" alt="Nabeul Banner" />
-            <h1>Welcome to Nabeul</h1>
-            <p>Your gateway to the beautiful coastal city of Nabeul, Tunisia.</p>
+            <video autoplay muted loop id="video-background">
+                <source src="images/home page/f3a7349b-e46f-4a3f-8710-4349fd975861.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Welcome to Nabeul</h1>
+                <p>Your gateway to the beautiful coastal city of Nabeul, Tunisia.</p>
+            </div>
+            
         </div>
         
-        <nav>
-            <ul>
-                <li><a href="#places-to-visit">Places to visit</a></li>
-                <li><a href="#accommodation">Accomodation & Restaurants</a></li>
-                <li><a href="#reservation">Reservation</a></li>
-            </ul>
-        </nav>
+        
         
     </header>
+
+
+    <section id="places-to-visit">
+    <div class="section-container">
+        <div class="title-section">
+            <h2 class="places-to-visit-title">Places to visit</h2>
+        </div>
+        
+        <div class="places-container">
+            <div class ="image-container">
+                <img src="images/souk.jpg" class="places-to-visit">  
+                <p>Medina of Nabeul</p>
+            </div>
+            <div class="image-container">
+                <img src="images/sunrise.jpg" class="places-to-visit">
+                <p>Nabeul Beach</p>
+            </div>
+            <div class="image-container">
+                <img src="images/dar-sebastien1.jpg" class="places-to-visit">    
+                <p>Dar Sebastien</p>
+            </div>
+            <!--<div>El Haouaria Cliffs</div>
+            <div>Nabeul Archaeological Museum</div>
+            <div></div>-->
+                      
+
+
+        </div>
+    </div>        
+    </section>
+
+
+    <section id="accomodation">
+    <div class="section-container">
+        <h2>Accomodation & Restaurants</h2>
+        <div class="accomodation-container">
+            
+            <ul>
+                <li>Hotel La Maison Blanche</li>
+                <li>Dar Zarrouk</li>
+                <li>Restaurant Le Golfe</li>
+                <li>Chez Achour</li>
+                <li>Le Petit Pêcheur</li>
+            </ul>
+        </div>
+    </div>    
+    </section>
+    <section id="reservation">
+        <h2>Reservation</h2>
+        <div class="reservation-container">
+            <form>
+                <i class="fi fi-tr-calendar-clock"></i>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="date">Date of Visit:</label>
+                <input type="date" id="date" name="date" required><br><br>
+                
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" required><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
 </body>
 </html>
