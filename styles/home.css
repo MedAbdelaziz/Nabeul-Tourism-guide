@@ -68,13 +68,13 @@ nav a {
     border-radius: 5px;
 
 }
-.places-container {
+.places-container,.accommodation-container {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin: 20px 0;
-    padding: 40px 20px;
+    padding: 20px 10px;
     border-radius: 10px;
     background-color: #ffe4ba;
 }
