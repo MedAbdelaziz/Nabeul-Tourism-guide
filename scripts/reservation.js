@@ -1,35 +1,34 @@
-reservations = [
-    {name: "John Doe", email: "johndoe@gmail.com" date: "2024-07-15", guests: 4},
+export let reservations;
+
+reservations=getFromLocalStorage('reservations') || [
+    {name: "John Doe", email: "johndoe@gmail.com", date: "2024-07-15", guests: 4},
     {name: "Jane Smith", email: "janesmith@gmail.com", date: "2024-07-20", guests: 2},
-]
+    ];
+//window.onload = init;
 
-function addReservation(reservations){
+export function addReservation(newReservation){
     const reservationForm = document.querySelector('.reservation-form');
-    reservationForm.addEventListener('submit', (event)=> {
-        event.preventDefault();
-
-        const name = document.getElementById('name').value ;
-        const email = document.getElementById('email').value ;
-        const date = document.getElementById('date').value ;
-        const guests = document.getElementById('guests').value ;
-
-        const newReservation = { name, email, date, guests};
-        reservations.push(newReservation);
-        alert('Reservation added successfully!');
-        reservationForm.reset();
-    })
+    reservations.push(newReservation);
+    alert('Reservation added successfully!');
+    //console.log(reservations);
+    reservationForm.reset();
+    //console.log(reservations); 
+    saveToLocalStorage('reservations', reservations);
 }
 
 function init(){
-    addReservation(reservations);
-}
+    reservations = getFromLocalStorage('reservations');
+    //addReservation(reservations);
+    console.log(reservations);
 
-window.onload = init;
+}
 
 function saveToLocalStorage(key, data){
     localStorage.setItem(key, JSON.stringify(data));
 }
 function getFromLocalStorage(key){
-    const data = LocalStorage.getItem(key);
+    const data = localStorage.getItem(key);
     return data ? JSON.parse(data) : null;    
 }
+
+//console.log(reservations);
