@@ -35,6 +35,7 @@
     border-radius: 8px;
     position: relative;
     object-fit : cover;
+    justify-self: stretch;
 }
 .info-container {
     flex:2;
@@ -59,7 +60,6 @@
     
     font-size: 18px;
     font-weight: bold;
-    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     color: #006CE4;
         
 }
@@ -67,4 +67,84 @@
     width: 100px;
     height: auto;
 
+}
+.price-container {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-end;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+.price-note {
+    flex : 2;
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+.price-note-right{
+    flex: 0;
+    font-size: 20px;
+    color:#f0f0f0;
+    background-color:#0035e4;
+    padding:2px 3px;
+    border-radius: 10px;
+}
+.price-note-left{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-end;
+    gap: 2px;
+}
+.comment{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+.review-count{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #6d6d6d;
+    font-weight:lighter;
+    font-size:smaller;
+}
+.price-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #006CE4;
+}
+.side-note{
+    font-size: 14px;
+    color: #6d6d6d;
+    font-weight: lighter;
+}
+.availability-note {
+    flex: 1;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #006CE4;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.availability-note:hover {
+    background-color: #004bb5;
+}
+.accommodation-description {
+    font-size: 14px;
+    color: #4d4d4d;
+    line-height: 1.5;
+    
 }
