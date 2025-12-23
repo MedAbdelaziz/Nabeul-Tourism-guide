@@ -1,4 +1,4 @@
-export let hotels=[
+export const hotels=[
     {
         id:`1`,
         name:`The Grand Budapest OCEANA Hotel & Spa`,
@@ -11,7 +11,7 @@ export let hotels=[
             score:9.1,
             reviews:493,
             note:`Very Good`,
-            starts:5
+            stars:5
          },
         id:`2`,
         name:`Royal Tulip Taj Sultan`,
@@ -23,7 +23,7 @@ export let hotels=[
             score:8.1,
             reviews:980,
             note:`Good`,
-            starts:4
+            stars:4
          },
           id:`3`,
         name:`The Mirage Resort & Spa`,
@@ -35,7 +35,7 @@ export let hotels=[
             score:8.3,
             reviews:1182,
             note:` Very Good`,
-            starts:4
+            stars:4
          },
           id:`4`,
         name:`Iberostar Waves Averroes`,
@@ -47,7 +47,7 @@ export let hotels=[
             score:8.3,
             reviews:1664,
             note:` Very Good`,
-            starts:4
+            stars:4
          },
             id:`5`,
         name:`La Badira-Adult Only`,
@@ -59,7 +59,7 @@ export let hotels=[
             score:9.1,
             reviews:1560,
             note:` Fabulous`,
-            starts:5
+            stars:5
          },
             id:`6`,
         name:`Royal Azur Thalasso`,
@@ -70,7 +70,7 @@ export let hotels=[
             score:9.0,
             reviews:1770,
             note:` Fabulous`,
-            starts:5
+            stars:5
          },
 
 

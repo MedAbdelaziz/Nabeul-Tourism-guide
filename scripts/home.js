@@ -1,4 +1,4 @@
-import { addReservation,reservations } from './reservation.js';
+import { addReservation,reservations } from '../data/reservation.js';
 
 const reservationForm = document.querySelector('.reservation-form');
 reservationForm.addEventListener('submit', (event)=> {
@@ -12,5 +12,5 @@ reservationForm.addEventListener('submit', (event)=> {
     const newReservation = { name, email, date, guests};
     console.log(newReservation);
     addReservation(newReservation);
-    
+    forms.reset();
 });
