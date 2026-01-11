@@ -3,9 +3,7 @@
     flex-direction: column;
     gap: 20px;
     max-width: 1000px;
-    border-color:red;
-    border-width: 2px;
-    border-style: solid;
+    
     justify-content: flex-start;
     justify-self: center;
     align-content: space-around;

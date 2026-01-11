@@ -30,7 +30,11 @@ function renderAccomodation(){
                     <div class="price-note-right">${hotel.rating.score}</div>
                 </div>
                 <div class="price-value">${hotel.price}$<span class="side-note">/per night</span></div>
-                <div class="availability-note">Check Availability</div>
+                <a href="reservation.html">
+                <div class="availability-note
+                 availability-note-js-${hotel.id}"
+                 data-hotel-id="${hotel.id}">Check Availability</div>
+                </a>
             </div>
         </div>`      
     });
@@ -39,3 +43,10 @@ function renderAccomodation(){
     .innerHTML=html;
 
 }
+
+const checkout= document.querySelectorAll('.availability-note');
+checkout.forEach((link)=>{
+    link.addEventListener('click',()=>{
+
+    });
+});
