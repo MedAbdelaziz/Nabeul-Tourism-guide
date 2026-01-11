@@ -1,8 +1,8 @@
 export let reservations;
 
 reservations=getFromLocalStorage('reservations') || [
-    {name: "John Doe", email: "johndoe@gmail.com", date: "2024-07-15", guests: 4},
-    {name: "Jane Smith", email: "janesmith@gmail.com", date: "2024-07-20", guests: 2},
+    {name: "John Doe", email: "johndoe@gmail.com", phone: "+216 123456789",hotelId:"1", date: "2024-07-15", guests: 4},
+    {name: "Jane Smith", email: "janesmith@gmail.com", phone: "+216 987654321",hotelId:"2", date: "2024-07-20", guests: 2},
     ];
 //window.onload = init;
 
@@ -32,3 +32,4 @@ function getFromLocalStorage(key){
 }
 
 //console.log(reservations);
+

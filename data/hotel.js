@@ -1,3 +1,12 @@
+
+export function getHotel(hotelId){
+   hotels.forEach((item)=>{
+      if(item.id==hotelId){
+         return item;
+      }
+   });
+   console.log('hotel does not exist');
+} 
 export const hotels=[
     {
         id:`1`,
