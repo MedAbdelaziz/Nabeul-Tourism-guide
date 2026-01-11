@@ -46,28 +46,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 0;
 }
-nav {
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    padding: 10px 0;
-    font-family: 'Roboto';
-}
 
-nav a {
-    color: rgb(116, 181, 255);
-    text-decoration: none;
-    padding: 14px 20px;
-    font-size: 18px;
- }
-
-  nav a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-
-}
 .places-container,.accommodation-container {
     display:flex;
     flex-direction: row;
@@ -87,8 +66,3 @@ nav a {
     font-style: underline;    
 } 
 
-.nav .logo-container {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}

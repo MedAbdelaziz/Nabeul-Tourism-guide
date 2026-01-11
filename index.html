@@ -15,18 +15,29 @@
     <link rel="stylesheet" href="styles/global.css">
 
 </head>
-<body>
+<body class="home">
     <header>
-        <nav class="nav">
+        <div style="height:80px;" class="navbar ">
             <div class="logo-container">
                 <img src="images/icons-and-logos/logo2.png" class="logo">
-                
             </div>
-            
-            <a href="#places-to-visit">Places to visit</a></li>
-            <a href="#accommodation">Accomodation & Restaurants</a></li>
-            <a href="#reservation">Reservation</a></li>
-        </nav>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="places-to-visit.html">Visit</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="accommodation.html">Accommodation & Restaurants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reservation.html">Reservation</a>
+                </li>
+            </ul>
+        </div>
+        
+        
         <div class="banner">
             <video autoplay muted loop id="video-background">
                 <source src="images/home page/f3a7349b-e46f-4a3f-8710-4349fd975861.mp4" type="video/mp4">
@@ -114,7 +125,7 @@
     <section id="reservation">
         <h2>Reservation</h2>
         <div class="reservation-container">
-            <form class="reservation-form">
+            <form id="reserve" class="reservation-form">
                 <i class="fi fi-tr-calendar-clock"></i>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
