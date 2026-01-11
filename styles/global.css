@@ -3,7 +3,7 @@ body {
     color: #1a1a1a;
 }
 .navbar {
-    background-color: #ffffff;
+    background: transparent !important;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -11,9 +11,8 @@ body {
     padding: 10px 0;
     font-family: 'Roboto';
 }
-
 .navbar a {
-    color: rgb(116, 181, 255);
+    color: rgb(27, 29, 31);
     text-decoration: none;
     padding: 14px 20px;
     font-size: 18px;
