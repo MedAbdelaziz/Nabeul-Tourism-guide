@@ -4,29 +4,37 @@ const reservationForm = document.querySelector('.reservation-form');
 reservationForm.addEventListener('submit', (event)=> {
     event.preventDefault();
     const name = document.getElementById('name').value ;
-    let pattern=/(^[A-Z]?[a-z]+\s){2,}/;
+    let pattern=/^[A-Z][a-z]+(\s[A-Z][a-z]+)+$/;
     if(!pattern.test(name)){
         alert('Invalid name');
-        reservationForm['name'].style.border="red solid 2px";
+        reservationForm['name'].classList.toggle('invalid');
         return;
     }
     const email = document.getElementById('email').value ;
     pattern=/^\w+([\.-_]?\w+)*@\w+([\.-_]?\w+)*(\.\w{2,3})+$/;
     if(!pattern.test(email)){
         alert('Invalid email');
-        reservationForm['name'].style.border="red solid 2px";
+        reservationForm['email'].classList.toggle('invalid');
         return;
     }
-    const date = document.getElementById('date').value ;
-   
+    const date = new Date(document.getElementById('date').value );
+    const today= new Date();
+    //console.log(date.toDateString()+' '+today.toDateString());
+    if(date.toDateString()< today.toDateString()){
+        alert('Invalid date');
+        reservationForm['date'].classList.toggle('invalid');
+        return;
+    }
     const guests = document.getElementById('guests').value ;
     pattern=/[0-9]/;
     if(!pattern.test(guests)){
         alert('Number of guest invalid');
+        reservationForm['guests'].classList.toggle('invalid');
         return;
     }
     if(guests >4){
         alert('Too many guests');
+        reservationForm['guests'].classList.toggle('invalid');
         return;
     }
     const newReservation = { name, email, date, guests};
