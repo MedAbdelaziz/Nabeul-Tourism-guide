@@ -1,8 +1,12 @@
-
-body {
-  font-family: 'Roboto', sans-serif;
+html {
+    background: url("../images/background.jpeg") center / cover no-repeat fixed;
 }
-
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: transparent !important;
+  min-height: 100vh;
+}
 .header-reservation {
   text-align: center;
   font-size: 36px;
