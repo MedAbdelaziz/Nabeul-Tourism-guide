@@ -18,16 +18,17 @@ reservationForm.addEventListener('submit', (event)=> {
         return;
     }
     const date = document.getElementById('date').value ;
-    if(){
-        alert('too young');
-        return;
-    }
+   
     const guests = document.getElementById('guests').value ;
     pattern=/[0-9]/;
     if(!pattern.test(guests)){
         alert('Number of guest invalid');
+        return;
     }
-
+    if(guests >4){
+        alert('Too many guests');
+        return;
+    }
     const newReservation = { name, email, date, guests};
     console.log(newReservation);
     addReservation(newReservation);
