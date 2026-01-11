@@ -74,7 +74,7 @@ function renderFormSelect(hotels){
 }
 
 export function renderHotelInfo(hotelId){
-    const hotel= getHotel(selectedElement);
+    const hotel= getHotel(hotelId);
     console.log(hotel);
     const html= `<div class="accommodation-container">
             <div class="image-container">

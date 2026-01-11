@@ -7,7 +7,7 @@ function renderAccomodation(){
     let html='';
     hotels.forEach(hotel => {
 
-        html+= `<div class="accommodation-container">
+        html+= `<div id="${hotel.id}" class="accommodation-container">
             <div class="image-container">
                 <img src="${hotel.image}" class="accommodation-image">
             </div>
@@ -44,9 +44,10 @@ function renderAccomodation(){
 
 }
 
-const checkout= document.querySelectorAll('.availability-note');
+/*const checkout= document.querySelectorAll('.availability-note');
 checkout.forEach((link)=>{
     link.addEventListener('click',()=>{
-
+        const hotelId= link.dataset.hotelId;
+        renderHotelInfo(hotelId);
     });
-});
+});*/

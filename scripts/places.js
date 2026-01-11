@@ -8,7 +8,7 @@ function renderPlaces() {
 
   nabeulPlaces.forEach((place) => {
     html += `
-      <div class="places-container">
+      <div id="${place.id}"class="places-container">
         <div class="image-container">
           <img src="${place.image}" class="place-image" alt="${place.name}">
         </div>
